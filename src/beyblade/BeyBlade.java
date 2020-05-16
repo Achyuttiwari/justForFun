@@ -13,20 +13,28 @@ public class BeyBlade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int testCase = scanner.nextInt();
-        int numberOfMember = scanner.nextInt();
-        long[] gRevolutionBeybladePower = new long[numberOfMember];
-        long[] opponentBeybladePower = new long[numberOfMember];
+
         for (int i = 0; i < testCase; i++) {
+            int numberOfMember = scanner.nextInt();
+            long[] gRevolutionBeybladePower = new long[numberOfMember];
+            long[] opponentBeybladePower = new long[numberOfMember];
+            //for input of array gRevolutionBeybladePower
+
             for (int j = 0; j < gRevolutionBeybladePower.length; j++) {
                 gRevolutionBeybladePower[j] = scanner.nextLong();
             }
+            // for input of array opponentBeybladePower
+
             for (int j = 0; j < opponentBeybladePower.length; j++) {
                 opponentBeybladePower[j] = scanner.nextLong();
             }
+            ///if we input no. of player is equal to 1
+
             if (numberOfMember == 1) {
                 if(gRevolutionBeybladePower[0]>opponentBeybladePower[0]) System.out.println("1");
                 else System.out.println("0");
             }
+
             System.out.println(result(gRevolutionBeybladePower, opponentBeybladePower, numberOfMember));
         }
 
@@ -54,8 +62,12 @@ public class BeyBlade {
             }
         }
 
+        //// to swap if the match is going to draw then
+        // the power is get swap with greater one to make it add to
+        // no. of possibility of winning to team gRevolutionBeyblade
+
         for (int i = 0; i < gRevolutionBeybladePower.length - 1; i++) {
-            if (gRevolutionBeybladePower[i] == opponentBeybladePower[i]) {
+            if (gRevolutionBeybladePower[i] == opponentBeybladePower[i] || gRevolutionBeybladePower[i] < opponentBeybladePower[i]) {
                 long temp = gRevolutionBeybladePower[i];
                 gRevolutionBeybladePower[i] = gRevolutionBeybladePower[i + 1];
                 gRevolutionBeybladePower[i + 1] = temp;
@@ -63,11 +75,7 @@ public class BeyBlade {
             }
 
         }
-        if (gRevolutionBeybladePower[numberOfMember - 1] == opponentBeybladePower[numberOfMember - 1]) {
-            long temp = gRevolutionBeybladePower[numberOfMember - 1];
-            gRevolutionBeybladePower[numberOfMember - 1] = gRevolutionBeybladePower[numberOfMember - 2];
-            gRevolutionBeybladePower[numberOfMember - 2] = temp;
-        }
+
 
         for (int i = 0; i < gRevolutionBeybladePower.length; i++) {
             if (gRevolutionBeybladePower[i] > opponentBeybladePower[i]) possibilityOfWinning++;
