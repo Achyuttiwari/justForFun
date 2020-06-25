@@ -51,7 +51,7 @@ public class Game {
                     shouldFinish = true;
                 }
                 else if(guessedNumber > rno){
-
+                    System.out.println("Guess lower number");
                 }
 
             }
