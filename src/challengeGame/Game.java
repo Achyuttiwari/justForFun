@@ -52,6 +52,7 @@ public class Game {
                 }
                 else if(guessedNumber > rno){
                     System.out.println("Guess lower number");
+                    guessedNumber = scanner.nextInt();
                 }
 
             }
