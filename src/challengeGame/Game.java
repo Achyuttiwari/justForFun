@@ -50,6 +50,9 @@ public class Game {
                     hasWon = true;
                     shouldFinish = true;
                 }
+                else if(guessedNumber > rno){
+
+                }
 
             }
 
