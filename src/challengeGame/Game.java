@@ -56,6 +56,7 @@ public class Game {
                 }
                 else{
                     System.out.println("Guess higher number");
+                    guessedNumber = scanner.nextInt();
                 }
 
             }
