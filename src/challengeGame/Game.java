@@ -14,8 +14,12 @@ public class Game {
         System.out.println("May, I know your name.?");
 
         Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
+        String name = scanner.next();
 
         System.out.println("Hello " + name);
+
+        System.out.println("Shall we start the game");
+        System.out.println("\tPress 1. for YES");
+        System.out.println("\tPress 2. for NO");
     }
 }
