@@ -34,6 +34,7 @@ public class Game {
 
         }
         Random random = new Random();
+        int rno = random.nextInt(21);
 
     }
 }
