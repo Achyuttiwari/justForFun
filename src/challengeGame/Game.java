@@ -54,6 +54,9 @@ public class Game {
                     System.out.println("Guess lower number");
                     guessedNumber = scanner.nextInt();
                 }
+                else{
+                    System.out.println("Guess higher number");
+                }
 
             }
 
