@@ -39,6 +39,14 @@ public class Game {
         int guessedNumber = scanner.nextInt();
 
         int timesTried = 0;
+        boolean hasWon = false;
+        boolean shouldFinish = false;
+
+        while(!shouldFinish){
+            timesTried ++ ;
+
+
+        }
 
     }
 }
