@@ -46,6 +46,10 @@ public class Game {
             timesTried ++ ;
 
             if(timesTried < 5) {
+                if(guessedNumber == rno){
+                    hasWon = true;
+                    shouldFinish = true;
+                }
 
             }
 
