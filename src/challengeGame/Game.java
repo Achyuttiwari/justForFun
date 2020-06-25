@@ -45,6 +45,11 @@ public class Game {
         while(!shouldFinish){
             timesTried ++ ;
 
+            if(timesTried < 5) {
+
+            }
+
+            else shouldFinish = true;
 
         }
 
