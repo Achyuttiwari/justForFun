@@ -38,5 +38,7 @@ public class Game {
         System.out.println("Please guess the number...");
         int guessedNumber = scanner.nextInt();
 
+        int timesTried = 0;
+
     }
 }
