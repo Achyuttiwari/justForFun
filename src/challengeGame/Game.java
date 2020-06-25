@@ -21,5 +21,7 @@ public class Game {
         System.out.println("Shall we start the game");
         System.out.println("\tPress 1. for YES");
         System.out.println("\tPress 2. for NO");
+
+        int userInput = scanner.nextInt();
     }
 }
