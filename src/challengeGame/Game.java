@@ -11,5 +11,7 @@ import java.util.Scanner;
 public class Game {
     public static void main(String[] args) {
         System.out.println("Welcome to the Game");
+        System.out.println("May, I know your name.?");
+
     }
 }
