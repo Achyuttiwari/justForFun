@@ -13,5 +13,7 @@ public class Game {
         System.out.println("Welcome to the Game");
         System.out.println("May, I know your name.?");
 
+        Scanner scanner = new Scanner(System.in);
+
     }
 }
