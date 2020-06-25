@@ -36,6 +36,7 @@ public class Game {
         Random random = new Random();
         int rno = random.nextInt(20) + 1;
         System.out.println("Please guess the number...");
+        int guessedNumber = scanner.nextInt();
 
     }
 }
