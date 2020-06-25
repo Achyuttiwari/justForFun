@@ -6,6 +6,7 @@
  */
 package challengeGame;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
@@ -16,7 +17,7 @@ public class Game {
         Scanner scanner = new Scanner(System.in);
         String name = scanner.next();
 
-        System.out.println("Hello " + name);
+        System.out.println("Hello " + name + " \uD83D\uDE09");
 
         System.out.println("Shall we start the game");
         System.out.println("\tPress 1. for YES");
@@ -32,5 +33,7 @@ public class Game {
             userInput = scanner.nextInt();
 
         }
+        Random random = new Random();
+
     }
 }
