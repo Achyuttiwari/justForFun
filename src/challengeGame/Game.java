@@ -14,6 +14,8 @@ public class Game {
         System.out.println("May, I know your name.?");
 
         Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+
 
     }
 }
